@@ -8,4 +8,39 @@
 }
 #dog {
   background-image: url(images/dog.png);
+  background-size: auto;
+  height: 112px;
+  width: 181px;
+  bottom:-22em;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+#owner {
+  background-image: url(images/owner.png);
+  background-size: auto;
+  height: 286px;
+  width: 120px;
+  position: relative;
+  left:0;
+  bottom: -4.5em;
+}
+#bone{
+  background-image: url(images/bone.png);
+  background-size: auto;
+  height:46px;
+  width: 96px;
+  position: relative;
+  left:5em;
+  top:-8em;
+  display: none;
+
+}
+#time {
+  background-image: url(images/sun.png);
+  height:113px;
+  width: 139px;
+  position: relative;
+  margin: auto;
 }

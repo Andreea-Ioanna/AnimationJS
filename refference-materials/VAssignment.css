@@ -1,0 +1,244 @@
+.bg {
+    border: solid black 10px;
+    height: 30vw;
+    min-width: 90%;
+    display: block;
+    margin: auto;
+    background-image: url(Bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: movebg 30s linear infinite;
+    animation-play-state: paused;
+}
+
+.movebg {
+    animation: movebg 30s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes movebg {
+    to {
+        background-position: -2100px;
+    }
+}
+
+.idle {
+    background-image: url(idle.png);
+    animation: idle 0.85s steps(6) infinite;
+    width: 90px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    left: 0;
+}
+
+@keyframes idle {
+    to {
+        background-position: -530px;
+    }
+}
+
+.walk {
+    background-image: url(walk.png);
+    animation: walk 0.8s steps(7) infinite;
+    height: 125px;
+    width: 75px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+}
+
+@keyframes walk {
+    to {
+        background-position: -547px;
+    }
+}
+
+.run {
+    background-image: url(run.png);
+    background-position: -5px;
+    animation: run 0.5s steps(7) infinite;
+    height: 120px;
+    width: 80px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@keyframes run {
+    to {
+        background-position: 547px;
+    }
+}
+
+.attack {
+    background-image: url(attack.png);
+    animation: attack 0.7s steps(6) infinite;
+    height: 130px;
+    width: 110px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+}
+
+@keyframes attack {
+    to {
+        background-position: 608px;
+    }
+}
+
+.shoot {
+    background-image: url(shoot.png);
+    animation: shoot 0.4s steps(4) infinite;
+    height: 130px;
+    width: 92px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: -5px;
+}
+
+@keyframes shoot {
+    to {
+        background-position: -370px;
+    }
+}
+
+.jetpack {
+    background-image: url(jetpack.png);
+    animation: jetpack 0.4s steps(3) infinite;
+    height: 100px;
+    width: 107px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    background-position: -3px;
+}
+
+@keyframes jetpack {
+    to {
+        background-position: 338px;
+    }
+}
+
+.jump {
+    background-image: url(jump.png);
+    animation: jump 0.5s steps(4) infinite;
+    height: 120px;
+    width: 90px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: -3px;
+}
+
+@keyframes jump {
+    to {
+        background-position: 352px;
+    }
+}
+
+.die {
+    background-image: url(die.png);
+    animation: die 0.000005s steps(6);
+    -webkit-animation-fill-mode:forwards;
+    height: 120px;
+    width: 100px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@keyframes die {
+    to {
+        background-position: -469px;
+    }
+    
+}
+
+.dizzy {
+    background-image: url(dizzy.png);
+    animation: dizzy 0.5s steps(3) infinite;
+    height: 110px;
+    width: 90px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: -3px;
+}
+
+@keyframes dizzy {
+    to {
+        background-position: 268px;
+    }
+}
+
+.hurt {
+    background-image: url(hurt.png);
+    animation: hurt 0.5s steps(3) infinite;
+    height: 134.5px;
+    width: 90px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    background-position: -3px;
+}
+
+@keyframes hurt {
+    to {
+        background-position: 268px;
+    }
+}
+
+.glow {
+    background-image: url(idle.png);
+    animation: glow 0.85s steps(6) infinite;
+    width: 90px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    left: 0;
+}
+
+@keyframes glow {
+    to {
+        background-position: -530px;
+    }
+    50% {
+        opacity: 0;
+    }
+}

@@ -11,6 +11,7 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
 }
 
 .diagram{
@@ -39,7 +40,7 @@
   background-size: auto;
   height: 112px;
   width: 181px;
-  bottom:-22em;
+  bottom:-19.5em;
   margin: auto;
   left: 0;
   right: 0;
@@ -66,9 +67,23 @@
 
 }
 #time {
+  position: relative;
+  margin: auto;
+}
+
+.sun {
   background-image: url(images/sun.png);
   height:113px;
   width: 139px;
-  position: relative;
-  margin: auto;
+}
+.bark {
+  animation: bark 1s 1;
+}
+@keyframes bark {
+  33% {
+    transform: rotate(30deg);
+  }
+  66% {
+    transform: rotate(-30deg);
+  }
 }

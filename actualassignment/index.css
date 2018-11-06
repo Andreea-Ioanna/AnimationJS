@@ -1,3 +1,31 @@
+.btn{
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diagram{
+     border: solid black 10px;
+  height: 576px;
+  width: 1024px;
+  margin:auto;
+}
+
+.story{
+  border: solid black 10px;
+  height: 576px;
+  width: 1024px;
+  margin:auto;
+}
 #bg {
   background-image: url(images/park.png);
   background-size: auto;

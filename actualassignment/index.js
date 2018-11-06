@@ -1,24 +1,19 @@
-const dog = document.querySelector('#bg');
-const owner = document.querySelector('#dog');
-const bone = document.querySelector('#bone');
-const time = document.querySelector('#time')
+const dog = document.querySelector("#dog");
+const owner = document.querySelector("#owner");
+const bone = document.querySelector("#bone");
+const time = document.querySelector("#time");
+const barkk = document.querySelector('#bark')
 
+// time.addEventListener('click',  shiftt);
+dog.addEventListener("mouseover", bark);
+owner.addEventListener("click", throww);
 
-let btnglow = document.querySelector("#btnglow");
-btnglow.addEventListener("click",glow);
-
-function glow () {
-    time.classList.add("glow");
-}
-
-time.addEventListener('click',  shiftt);
-dog.addEventListener('mouseover', bark);
-owner.addEventListener('click', throw1);
-//throw is a key word
-
-function throw1() {
-  dog.addEventListener('click', run);
+function throww() {
+  // dog.addEventListener('click', run);
   bone.style.display = 'block';
+
 }
-
-
+function bark() {
+  dog.classList.add('bark');
+  barkk.play();
+}

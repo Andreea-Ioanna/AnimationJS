@@ -26,6 +26,21 @@
   width: 1024px;
   margin:auto;
 }
+
+.glow{
+    animation: glow 1s infinite alternate ;
+    border-radius: 100px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px #aef4af;
+    }
+    to{
+        box-shadow: 0 0 10px 10px #aef4af;
+    }
+}
+
 #bg {
   background-image: url(images/park.png);
   background-size: auto;

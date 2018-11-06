@@ -1,7 +1,11 @@
-bg {
-  background-image: url('images/park.png');
+#bg {
+  background-image: url(images/park.png);
   background-size: auto;
   border: solid black 10px;
   height: 576px;
-  min-width: 90%;
+  width: 1024px;
+  margin:auto;
+}
+#dog {
+  background-image: url(images/dog.png);
 }

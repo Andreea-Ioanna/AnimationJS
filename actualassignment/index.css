@@ -28,18 +28,16 @@
   margin:auto;
 }
 
-.glow{
-    animation: glow 1s infinite alternate ;
-    border-radius: 100px;
-}
+.glow {
 
+}
 @keyframes glow {
-    from {
-        box-shadow: 0 0 10px -10px #aef4af;
-    }
-    to{
-        box-shadow: 0 0 10px 10px #aef4af;
-    }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #bg {
@@ -85,11 +83,39 @@
   position: relative;
   margin: auto;
 }
+.throw {
+  animation: throw 2s forwards;
+}
+@keyframes throw {
+  to {
+    transform: translate(50em, 4.5em) rotate(180deg);
+  }
 
+}
+.run {
+  animation: run 1s forwards;
+  z-index: 100;
+}
+@keyframes run {
+  to {
+    transform: translate(22em);
+  }
+}
 .sun {
   background-image: url(images/sun.png);
   height:113px;
   width: 139px;
+  animation: glow 1s infinite;
+}
+.moon {
+  background-image: url(images/moon.png);
+  bottom: -10px;
+  height:97px;
+  width: 120px;
+  background-position: center;
+}
+.night {
+  background-image: url(images/night.png);
 }
 .bark {
   animation: bark 1s 1;

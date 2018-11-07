@@ -1,4 +1,4 @@
-.btn{
+.btn {
     display: block;
     width: 115px;
     height: 25px;
@@ -14,117 +14,136 @@
     text-decoration: none;
 }
 
-.diagram{
-     border: solid black 10px;
-  height: 576px;
-  width: 1024px;
-  margin:auto;
-}
-
-.story{
-  border: solid black 10px;
-  height: 576px;
-  width: 1024px;
-  margin:auto;
-}
-
-.glow {
+.diagram {
+    border: solid black 10px;
+    height: 576px;
+    width: 1024px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
 
 }
+
+.story {
+    border: solid black 10px;
+    height: 576px;
+    width: 1024px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.glow {}
+
 @keyframes glow {
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #bg {
-  background-image: url(images/park.png);
-  background-size: auto;
-  border: solid black 10px;
-  height: 576px;
-  width: 1024px;
-  margin:auto;
+    background-image: url(images/park.png);
+    background-size: auto;
+    border: solid black 10px;
+    height: 576px;
+    width: 1024px;
+    margin: auto;
 }
+
 #dog {
-  background-image: url(images/dog.png);
-  background-size: auto;
-  height: 112px;
-  width: 181px;
-  bottom:-19.5em;
-  margin: auto;
-  left: 0;
-  right: 0;
-  position: relative;
+    background-image: url(images/dog.png);
+    background-size: auto;
+    height: 112px;
+    width: 181px;
+    bottom: -19.5em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: relative;
 }
+
 #owner {
-  background-image: url(images/owner.png);
-  background-size: auto;
-  height: 286px;
-  width: 120px;
-  position: relative;
-  left:0;
-  bottom: -4.5em;
+    background-image: url(images/owner.png);
+    background-size: auto;
+    height: 286px;
+    width: 120px;
+    position: relative;
+    left: 0;
+    bottom: -4.5em;
 }
-#bone{
-  background-image: url(images/bone.png);
-  background-size: auto;
-  height:46px;
-  width: 96px;
-  position: relative;
-  left:5em;
-  top:-8em;
-  display: none;
+
+#bone {
+    background-image: url(images/bone.png);
+    background-size: auto;
+    height: 46px;
+    width: 96px;
+    position: relative;
+    left: 5em;
+    top: -8em;
+    display: none;
 
 }
+
 #time {
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
+
 .throw {
-  animation: throw 2s forwards;
+    animation: throw 2s forwards;
 }
+
 @keyframes throw {
-  to {
-    transform: translate(50em, 4.5em) rotate(180deg);
-  }
+    to {
+        transform: translate(50em, 4.5em) rotate(180deg);
+    }
 
 }
+
 .run {
-  animation: run 1s forwards;
-  z-index: 100;
+    animation: run 1s forwards;
+    z-index: 100;
 }
+
 @keyframes run {
-  to {
-    transform: translate(22em);
-  }
+    to {
+        transform: translate(22em);
+    }
 }
+
 .sun {
-  background-image: url(images/sun.png);
-  height:113px;
-  width: 139px;
-  animation: glow 1s infinite;
+    background-image: url(images/sun.png);
+    height: 113px;
+    width: 139px;
+    animation: glow 1s infinite;
 }
+
 .moon {
-  background-image: url(images/moon.png);
-  bottom: -10px;
-  height:97px;
-  width: 120px;
-  background-position: center;
+    background-image: url(images/moon.png);
+    bottom: -10px;
+    height: 97px;
+    width: 120px;
+    background-position: center;
 }
+
 .night {
-  background-image: url(images/night.png);
+    background-image: url(images/night.png);
 }
+
 .bark {
-  animation: bark 1s 1;
+    animation: bark 1s 1;
 }
+
 @keyframes bark {
-  33% {
-    transform: rotate(30deg);
-  }
-  66% {
-    transform: rotate(-30deg);
-  }
+    33% {
+        transform: rotate(30deg);
+    }
+
+    66% {
+        transform: rotate(-30deg);
+    }
 }
